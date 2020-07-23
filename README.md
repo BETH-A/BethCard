@@ -1,4 +1,4 @@
-(BethCard/Assets.xcassets/bLogo.imageset/E0DCE91C-A099-44BA-8DA4-71587B3803BF.png)
+![logo](BethCard/Assets.xcassets/bLogo.imageset/E0DCE91C-A099-44BA-8DA4-71587B3803BF.png)
 
 # BethCard
 

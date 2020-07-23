@@ -30,7 +30,7 @@ struct ContentView: View {
                     .font(Font.custom("Tangerine-Bold", size: 50))
                     .foregroundColor(.white)
                     .bold()
-                Text("iOS & Full Stack ")
+                Text("iOS Developer & Full Stack")
                     .foregroundColor(.white)
                     .font(.system(size: 22))
                 Text("Web App Developer")

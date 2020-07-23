@@ -6,11 +6,13 @@
 
 Fully functioning Business Card SwiftUI app.
 
-# Features
+## Features
 
 - [x] Call button which gives the user the ability to call me
 - [x] Email button which opens up the new email with my email address filled in
-- [ ]Social media icons/links
-- [ ]Portfolio page
+- [ ] Social media icons/links
+- [ ] Portfolio page
+- [x] Custom Gradient background
+
 
 

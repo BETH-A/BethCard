@@ -25,6 +25,7 @@ struct ContentView: View {
                     .clipShape(Ellipse())
                     .overlay(
                         Circle().stroke(Color.white, lineWidth: 5))
+                    .padding(.top, 75)
                 
                 Text("Mary 'Beth' Arnold")
                     .font(Font.custom("Tangerine-Bold", size: 50))
@@ -36,7 +37,8 @@ struct ContentView: View {
                 Text("Web App Developer")
                     .foregroundColor(.white)
                     .font(.system(size: 22))
-                Divider()
+                //                Divider()
+                Spacer()
                 VStack {
                     //Press phone button to call me
                     Button(action: {
@@ -67,8 +69,57 @@ struct ContentView: View {
                         InfoView(text: "elizabeth78@me.com", imageName: "envelope.fill")
                     }
                 }
+                VStack {
+                    Button(action: {
+                        
+                    }) {
+                        InfoView(text: "Projects", imageName: "")
+                    }
+                }
+                
+                //                Divider()
+                Spacer()
+                
+                HStack {
+                    VStack {
+                        Button(action: {
+                            
+                            guard let github = URL(string: "https://github.com/BETH-A"),
+                                UIApplication.shared.canOpenURL(github) else {
+                                    return
+                            }
+                            UIApplication.shared.open(github, options: [:], completionHandler: nil)
+                        }) {
+                            
+                            Image("github1")
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(width: 75, height: 75)
+                                .padding(.horizontal, 50)
+                                .foregroundColor(.white)
+                        }
+                    }
+                    
+                    VStack {
+                        Button(action: {
+                            
+                            guard let github = URL(string: "https://github.com/BETH-A"),
+                                UIApplication.shared.canOpenURL(github) else {
+                                    return
+                            }
+                            UIApplication.shared.open(github, options: [:], completionHandler: nil)
+                        }) {
+                            
+                            Image("logoLinkedIn")
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(width: 100, height: 100)
+                                .padding(.horizontal, 50)
+                                .foregroundColor(.white)
+                        }
+                    }
+                }
             }
-            
         }
     }
     

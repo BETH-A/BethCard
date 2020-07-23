@@ -14,5 +14,7 @@ Fully functioning Business Card SwiftUI app.
 - [ ] Portfolio page
 - [x] Custom Gradient background
 
+## Usage
 
+As not currently launched on app store, please clone the repo & open with XCode.  App can then be viewed in XCode Preview.
 

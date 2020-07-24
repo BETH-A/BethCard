@@ -37,7 +37,7 @@ struct ContentView: View {
                 Text("Web App Developer")
                     .foregroundColor(.white)
                     .font(.system(size: 22))
-                //                Divider()
+
                 Spacer()
                 VStack {
                     //Press phone button to call me
@@ -71,13 +71,12 @@ struct ContentView: View {
                 }
                 VStack {
                     Button(action: {
-                        
+
                     }) {
-                        InfoView(text: "Projects", imageName: "")
+                        InfoView(text: "Portfilio Projects", imageName: "chevron.left.slash.chevron.right")
                     }
                 }
-                
-                //                Divider()
+
                 Spacer()
                 
                 HStack {
@@ -103,7 +102,7 @@ struct ContentView: View {
                     VStack {
                         Button(action: {
                             
-                            guard let github = URL(string: "https://github.com/BETH-A"),
+                            guard let github = URL(string: "https://www.linkedin.com/in/beth-arnold-640170153/"),
                                 UIApplication.shared.canOpenURL(github) else {
                                     return
                             }
@@ -119,6 +118,7 @@ struct ContentView: View {
                         }
                     }
                 }
+                .padding(.bottom, 30)
             }
         }
     }

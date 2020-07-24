@@ -9,10 +9,39 @@
 import SwiftUI
 import CallKit
 import MessageUI
+import Combine
+
+
+enum MyAppPage {
+    case Content
+    case Portfolio
+}
+
+final class MyAppEnvironmentData: ObservableObject {
+    @Published var currentPage : MyAppPage? = .Content
+}
+
+struct NavigationTest: View {
+
+    var body: some View {
+        NavigationView {
+            ContentView()
+        }
+    }
+}
 
 struct ContentView: View {
+    @EnvironmentObject var env : MyAppEnvironmentData
+    
     var body: some View {
-        ZStack {
+        let navlink = NavigationLink(destination: PortfolioView(),
+                      tag: .Portfolio,
+                      selection: $env.currentPage,
+                      label: { EmptyView() })
+
+            return ZStack {
+                navlink
+                .frame(width: 0, height: 0)
             AngularGradient(gradient: Gradient(colors: [.black, .black, .gray, .black, .black, .gray, .black]), center: .center)
                 //            Color(red: 0.28, green: 0.33, blue: 0.38, opacity: 1.00)
                 .edgesIgnoringSafeArea(.all)
@@ -70,7 +99,9 @@ struct ContentView: View {
                     }
                 }
                 VStack {
+                    
                     Button(action: {
+                        self.env.currentPage = .Portfolio
 
                     }) {
                         InfoView(text: "Portfilio Projects", imageName: "chevron.left.slash.chevron.right")
@@ -123,9 +154,11 @@ struct ContentView: View {
         }
     }
     
+    
     struct ContentView_Previews: PreviewProvider {
         static var previews: some View {
             ContentView()
         }
     }
 }
+

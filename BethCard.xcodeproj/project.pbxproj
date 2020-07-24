@@ -16,6 +16,7 @@
 		4E6EE2B524BCD8E7001BB720 /* Tangerine-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4E6EE2B424BCD8E7001BB720 /* Tangerine-Regular.ttf */; };
 		4E6EE2BD24BDF741001BB720 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6EE2BC24BDF741001BB720 /* InfoView.swift */; };
 		4E7F907E24CA3AAF00CEDF8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E7F907D24CA3AAF00CEDF8C /* Assets.xcassets */; };
+		4E7F908024CA602900CEDF8C /* PortfolioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7F907F24CA602900CEDF8C /* PortfolioView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		4E6EE2B424BCD8E7001BB720 /* Tangerine-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Tangerine-Regular.ttf"; path = "../../../../../Downloads/Tangerine/Tangerine-Regular.ttf"; sourceTree = "<group>"; };
 		4E6EE2BC24BDF741001BB720 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		4E7F907D24CA3AAF00CEDF8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4E7F907F24CA602900CEDF8C /* PortfolioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				4E6EE29824BCD0CE001BB720 /* AppDelegate.swift */,
 				4E6EE29A24BCD0CE001BB720 /* SceneDelegate.swift */,
 				4E6EE29C24BCD0CE001BB720 /* ContentView.swift */,
+				4E7F907F24CA602900CEDF8C /* PortfolioView.swift */,
 				4E7F907D24CA3AAF00CEDF8C /* Assets.xcassets */,
 				4E6EE2BC24BDF741001BB720 /* InfoView.swift */,
 				4E6EE2A324BCD0CF001BB720 /* LaunchScreen.storyboard */,
@@ -166,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E6EE2BD24BDF741001BB720 /* InfoView.swift in Sources */,
+				4E7F908024CA602900CEDF8C /* PortfolioView.swift in Sources */,
 				4E6EE29924BCD0CE001BB720 /* AppDelegate.swift in Sources */,
 				4E6EE29B24BCD0CE001BB720 /* SceneDelegate.swift in Sources */,
 				4E6EE29D24BCD0CE001BB720 /* ContentView.swift in Sources */,

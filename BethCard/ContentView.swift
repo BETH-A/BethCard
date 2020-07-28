@@ -81,7 +81,7 @@ struct ContentView: View {
                         
                     }) {
                         //Button contents
-                        InfoView(text: "317-442-0816", imageName: "phone.fill")
+                        InfoView(text: "Call Me", imageName: "phone.fill")
                     }
                 }
                 VStack {
@@ -95,7 +95,7 @@ struct ContentView: View {
                             }
                         }
                     }) {
-                        InfoView(text: "elizabeth78@me.com", imageName: "envelope.fill")
+                        InfoView(text: "Email Me", imageName: "envelope.fill")
                     }
                 }
                 VStack {
